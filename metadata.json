@@ -1,0 +1,8 @@
+{
+  "name": "MC Heating & Plumbing",
+  "description": "Premium heating and plumbing services in Birmingham. 31 years of experience, ex-British Gas engineer, and full installations.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
