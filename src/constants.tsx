@@ -135,7 +135,7 @@ export const REVIEWS: Review[] = [
 export const GALLERY: GalleryItem[] = [
   {
     id: 'g1',
-    url: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&q=80&w=800',
+    url: 'https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_600,c_fill,q_80,f_auto/v1778344856/20260509_135347_0000_hfqh8a.png',
     title: 'New Boiler Installation',
     category: 'boiler'
   },
@@ -147,13 +147,13 @@ export const GALLERY: GalleryItem[] = [
   },
   {
     id: 'g3',
-    url: 'https://images.unsplash.com/photo-1574360523441-df071650346c?auto=format&fit=crop&q=80&w=800',
+    url: 'https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_600,c_fill,q_80,f_auto/v1778344854/20260509_134620_0000_hktlfn.png',
     title: 'Underfloor Heating Setup',
     category: 'heating'
   },
   {
     id: 'g4',
-    url: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=800',
+    url: 'https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_600,c_fill,q_80,f_auto/v1778344850/20260509_135134_0000_prbvrg.png',
     title: 'Copper Pipework',
     category: 'plumbing'
   }
