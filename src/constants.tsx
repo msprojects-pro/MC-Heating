@@ -62,7 +62,7 @@ export const SERVICES: Service[] = [
     title: 'Boiler Installation',
     description: 'Expert installation of modern, energy-efficient boilers with full warranties.',
     icon: 'Flame',
-    image: 'https://images.unsplash.com/photo-1581094751156-35342eabb8cd?auto=format&fit=crop&q=80&w=800'
+    image: 'https://unsplash.com/photos/electric-boiler-wall-water-heater-in-bathroom-Z6GxeYUzG_s?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'boiler-service',
@@ -76,14 +76,14 @@ export const SERVICES: Service[] = [
     title: 'Central Heating Systems',
     description: 'Full design and installation of complete central heating systems tailored to your home.',
     icon: 'Flame',
-    image: 'https://images.unsplash.com/photo-1574360523441-df071650346c?auto=format&fit=crop&q=80&w=800'
+    image: 'https://unsplash.com/photos/heating-specialist-with-gas-leak-detector-in-his-hand-performing-necessary-check-vG7-nbVmTM0?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'emergency',
     title: 'Boiler & Heating Repairs',
     description: 'Expert diagnostics and repairs for boiler failures and heating system issues.',
     icon: 'ShieldAlert',
-    image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=800'
+    image: 'https://unsplash.com/photos/a-person-using-one-of-tools-while-repairing-or-fixing-parts-of-pipes-e2twQyucgbI?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'bathroom',
@@ -97,7 +97,7 @@ export const SERVICES: Service[] = [
     title: 'Minor Plumbing Works',
     description: 'Leaks, taps, toilets, and all small plumbing repairs handled professionally.',
     icon: 'Wrench',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800'
+    image: 'https://unsplash.com/photos/person-opening-faucet-Vve7XkiUq_Y?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
