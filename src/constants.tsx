@@ -62,7 +62,7 @@ export const SERVICES: Service[] = [
     title: 'Boiler Installation',
     description: 'Expert installation of modern, energy-efficient boilers with full warranties.',
     icon: 'Flame',
-    image: 'https://unsplash.com/photos/electric-boiler-wall-water-heater-in-bathroom-Z6GxeYUzG_s?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800&q=80&auto=format'
   },
   {
     id: 'boiler-service',
@@ -76,28 +76,28 @@ export const SERVICES: Service[] = [
     title: 'Central Heating Systems',
     description: 'Full design and installation of complete central heating systems tailored to your home.',
     icon: 'Flame',
-    image: 'https://unsplash.com/photos/heating-specialist-with-gas-leak-detector-in-his-hand-performing-necessary-check-vG7-nbVmTM0?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&auto=format'
   },
   {
     id: 'emergency',
     title: 'Boiler & Heating Repairs',
     description: 'Expert diagnostics and repairs for boiler failures and heating system issues.',
     icon: 'ShieldAlert',
-    image: 'https://unsplash.com/photos/a-person-using-one-of-tools-while-repairing-or-fixing-parts-of-pipes-e2twQyucgbI?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
-  {
+  {          
     id: 'bathroom',
     title: 'Bathroom Refurbishment',
     description: 'From design to full installation, we create beautiful, functional bathrooms.',
     icon: 'Bath',
-    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80&auto=format'
   },
   {
     id: 'plumbing',
     title: 'Minor Plumbing Works',
     description: 'Leaks, taps, toilets, and all small plumbing repairs handled professionally.',
     icon: 'Wrench',
-    image: 'https://unsplash.com/photos/person-opening-faucet-Vve7XkiUq_Y?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80&auto=format'
   }
 ];
 
