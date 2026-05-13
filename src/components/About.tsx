@@ -16,7 +16,7 @@ export function About() {
           >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden glow-border">
               <img 
-                src="https://https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,q_80,f_auto/v1778696916/IMG_20260513_232458_qpfzde.jpg" 
+                src="https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_600,c_fill,q_80,f_auto/v1778696916/IMG_20260513_232458_qpfzde.jpg" 
                 alt="Mitch - MC Heating Plumbing Owner" 
                 className="w-full h-full object-cover"
               />
