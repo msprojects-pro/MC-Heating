@@ -18,7 +18,7 @@ export function About() {
               <img 
                 src="https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,q_80,f_auto/v1778696354/20260513_231409_0000_gdweg5.png" 
                 alt="Mitch - MC Heating Plumbing Owner" 
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent" />
             </div>
