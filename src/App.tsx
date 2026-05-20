@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-
+import PrivacyPolicy from "./components/PrivacyPolicy";
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
