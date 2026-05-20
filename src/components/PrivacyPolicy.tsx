@@ -1,6 +1,11 @@
-const PrivacyPolicy = () => {
+const PrivacyPolicy = ({ onBack }: { onBack: () => void }) => {
   return (
     <div style={{ maxWidth: "800px", margin: "60px auto", padding: "0 20px", color: "#fff", fontFamily: "sans-serif", lineHeight: "1.8" }}>
+      
+      <button onClick={onBack} style={{ color: "#f97316", background: "none", border: "none", cursor: "pointer", marginBottom: "20px", fontSize: "14px" }}>
+        ← Back to Home
+      </button>
+
       <h1 style={{ color: "#f97316" }}>Privacy Policy</h1>
       <p style={{ color: "#aaa" }}>Last updated: May 2025</p>
 
