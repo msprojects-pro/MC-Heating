@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Facebook, MessageCircle, ArrowUp } from 'lucide-re
 import { Logo } from './Logo';
 import { BUSINESS_INFO, NAV_LINKS, SOCIAL_LINKS } from '../constants';
 
-export function Footer() {
+export function Footer({ onPrivacyClick }: { onPrivacyClick: () => void }) {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -85,10 +85,18 @@ export function Footer() {
         <hr className="border-white/5 mb-10" />
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-white/20 text-xs font-medium uppercase tracking-widest">
-            © {new Date().getFullYear()} {BUSINESS_INFO.name}. All rights reserved.
-          </p>
-          
+          <div className="flex items-center gap-6">
+            <p className="text-white/20 text-xs font-medium uppercase tracking-widest">
+              © {new Date().getFullYear()} {BUSINESS_INFO.name}. All rights reserved.
+            </p>
+            <button
+              onClick={onPrivacyClick}
+              className="text-white/20 hover:text-primary transition-colors text-xs font-medium uppercase tracking-widest"
+            >
+              Privacy Policy
+            </button>
+          </div>
+
           <button 
             onClick={scrollToTop}
             className="flex items-center gap-2 text-primary hover:text-white transition-colors group"
