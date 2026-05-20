@@ -2,6 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import { useState } from 'react';
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { Navbar } from './components/Navbar';
@@ -17,6 +18,8 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 import { BUSINESS_INFO } from './constants';
 
 export default function App() {
+  const [showPrivacy, setShowPrivacy] = useState(false);
+
   return (
     <HelmetProvider>
       <div className="min-h-screen bg-dark selection:bg-primary selection:text-dark">
@@ -29,48 +32,52 @@ export default function App() {
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         </Helmet>
 
-        <EmergencyBanner />
-        <Navbar />
-        
-        <main>
-          <Hero />
-          
-          <div className="relative">
-            {/* Background pattern */}
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03] pointer-events-none -z-10" />
-            
-            <About />
-            <Services />
-            
-            {/* Why Choose Us - Extra Section */}
-            <section className="py-24 bg-primary/5 border-y border-white/5">
-              <div className="max-w-7xl mx-auto px-4">
-                <div className="grid md:grid-cols-4 gap-8">
-                  {[
-                    { label: "Experience", value: "31 Years", sub: "Ex-British Gas" },
-                    { label: "Recommendation", value: "98%", sub: "Highly Recommended" },
-                    { label: "Reliability", value: "Local", sub: "Birmingham Area" },
-                    { label: "Quote", value: "FREE", sub: "No Call-out Fees" }
-                  ].map((stat, i) => (
-                    <div key={i} className="text-center p-8 glass rounded-3xl border-primary/10">
-                      <p className="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-2">{stat.label}</p>
-                      <p className="text-4xl font-display font-black text-white mb-2">{stat.value}</p>
-                      <p className="text-[10px] font-bold text-white/30 uppercase tracking-widest">{stat.sub}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            <Gallery />
-            <Testimonials />
-            <SectionDivider />
-            <Contact />
+        {showPrivacy ? (
+          // Privacy Policy Page
+          <div>
+            <Navbar />
+            <PrivacyPolicy />
+            <Footer onPrivacyClick={() => setShowPrivacy(true)} />
           </div>
-        </main>
-
-        <Footer />
-        <FloatingWhatsApp />
+        ) : (
+          // Main Site
+          <div>
+            <EmergencyBanner />
+            <Navbar />
+            <main>
+              <Hero />
+              <div className="relative">
+                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03] pointer-events-none -z-10" />
+                <About />
+                <Services />
+                <section className="py-24 bg-primary/5 border-y border-white/5">
+                  <div className="max-w-7xl mx-auto px-4">
+                    <div className="grid md:grid-cols-4 gap-8">
+                      {[
+                        { label: "Experience", value: "31 Years", sub: "Ex-British Gas" },
+                        { label: "Recommendation", value: "98%", sub: "Highly Recommended" },
+                        { label: "Reliability", value: "Local", sub: "Birmingham Area" },
+                        { label: "Quote", value: "FREE", sub: "No Call-out Fees" }
+                      ].map((stat, i) => (
+                        <div key={i} className="text-center p-8 glass rounded-3xl border-primary/10">
+                          <p className="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-2">{stat.label}</p>
+                          <p className="text-4xl font-display font-black text-white mb-2">{stat.value}</p>
+                          <p className="text-[10px] font-bold text-white/30 uppercase tracking-widest">{stat.sub}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </section>
+                <Gallery />
+                <Testimonials />
+                <SectionDivider />
+                <Contact />
+              </div>
+            </main>
+            <Footer onPrivacyClick={() => setShowPrivacy(true)} />
+            <FloatingWhatsApp />
+          </div>
+        )}
       </div>
     </HelmetProvider>
   );
